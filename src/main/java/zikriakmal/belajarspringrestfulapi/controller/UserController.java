@@ -28,7 +28,6 @@ public class UserController {
         return WebResponse.<String>builder().data("OK").build();
     }
 
-
     @GetMapping(
             path = "/api/users/current",
             produces = MediaType.APPLICATION_JSON_VALUE

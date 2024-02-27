@@ -20,7 +20,6 @@ import javax.print.attribute.standard.Media;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
@@ -123,6 +122,4 @@ class AuthControllerTest {
             assertEquals(userDb.getTokenExpiredAt(), response.getData().getExpiredAt());
         });
     }
-
-
 }
